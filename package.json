@@ -1,12 +1,15 @@
 {
   "name": "mathlib-npm-new",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Python library for basic mathematical operations.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Python", "Mathmatical operations"],
+  "keywords": ["Python", "Mathematical operations"],
   "author": "Arun Kumar Pandey",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "@arunp77:registry": "https://npm.pkg.github.com"
+  }
 }
