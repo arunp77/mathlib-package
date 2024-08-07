@@ -1,4 +1,4 @@
-import math
+import cmath
 
 def complex_addition(c1, c2):
     """
@@ -98,4 +98,4 @@ def complex_phase(c):
     >>> complex_phase(1 + 1j)
     0.7853981633974483
     """
-    return math.phase(c)
+    return cmath.phase(c)

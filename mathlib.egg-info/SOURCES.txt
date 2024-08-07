@@ -1,12 +1,14 @@
 LICENCE
+README.md
 setup.py
 mathlib/Power_Roots.py
 mathlib/__init__.py
 mathlib/algebra.py
 mathlib/arithmetic.py
 mathlib/complex_numbers.py
-mathlib/logrithmic.py
+mathlib/logarithmic.py
 mathlib/matrix_operations.py
+mathlib/power_roots.py
 mathlib/random_utils.py
 mathlib/statistics.py
 mathlib/trigonometry.py
@@ -17,3 +19,11 @@ mathlib.egg-info/dependency_links.txt
 mathlib.egg-info/top_level.txt
 tests/test_algebra.py
 tests/test_arithmetic.py
+tests/test_complex_numbers.py
+tests/test_logarithmic.py
+tests/test_matrix_operations.py
+tests/test_power_roots.py
+tests/test_random_utils.py
+tests/test_statistics.py
+tests/test_trigonometry.py
+tests/test_utility.py

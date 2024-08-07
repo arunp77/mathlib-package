@@ -80,3 +80,28 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero.")
     return a / b
+
+
+def power(x, y):
+    """
+    Raise x to the power of y.
+
+    Parameters:
+    x (float or int): The base.
+    y (float or int): The exponent.
+
+    Returns:
+    float or int: The result of x raised to the power of y.
+
+    Raises:
+    ValueError: If either x or y is not a numeric type.
+
+    Examples:
+    >>> power(2, 3)
+    8
+    >>> power(5, 0)
+    1
+    """
+    if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
+        raise ValueError("Both x and y must be numeric types.")
+    return x ** y

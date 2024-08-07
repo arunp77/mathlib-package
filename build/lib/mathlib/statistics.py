@@ -47,31 +47,6 @@ def median(data):
         raise ValueError('median requires at least one data point')
     return stats.median(data)
 
-def mode(data):
-    """
-    Calculate the mode of a dataset.
-
-    Parameters:
-    data (list of float): The dataset for which the mode is to be calculated.
-
-    Returns:
-    float: The mode of the dataset. If there are multiple modes, returns the first one found.
-
-    Raises:
-    ValueError: If no mode is found (all values occur with the same frequency).
-
-    Examples:
-    >>> mode([1, 2, 2, 3, 4])
-    2
-    >>> mode([1, 1, 2, 2, 3, 3])
-    1
-    """
-    if not data:
-        raise ValueError('mode requires at least one data point')
-    try:
-        return stats.mode(data)
-    except stats.StatisticsError as e:
-        raise ValueError('No mode found: ' + str(e))
 
 def variance(data):
     """
