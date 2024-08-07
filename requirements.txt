@@ -1,0 +1,5 @@
+# Core dependencies for running the project
+pytest==8.3.2
+
+# Packaging and distribution tools
+setuptools==68.0.0

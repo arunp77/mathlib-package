@@ -170,13 +170,13 @@ pytest algebra.py
     >
     > >>> mathlib
     > ```
-> We can also install mathlib, directly using `setup.py` file, using:
-> ```bash
-> python setup.py install --verbose
-> ```
-> This will give you more detailed output about what is happening during the installation process.
->
-> If you're using `pip install`, you can add the `-v` option for verbose output:
+    > We can also install mathlib, directly using `setup.py` file, using:
+    > ```bash
+    > python setup.py install --verbose
+    > ```
+    > This will give you more detailed output about what is happening during the installation process.
+    >
+    > If you're using `pip install`, you can add the `-v` option for verbose output:
 
 
 - **Step 3: Run the Tests**
@@ -187,6 +187,26 @@ pytest algebra.py
     pytest tests/
   ```
   This will execute the tests defined in `tests/test_arithmetic.py` and `tests/test_algebra.py`. If all the tests pass, it indicates that your package is functioning correctly.
+
+- **Step 4: Create Docekrimage**
+  ```bash
+  docker build -t arunp77/mathlib:latest .
+  ```
+
+  and then push it to DOcker. 
+  ```bash
+  docker push arunp77/mathlib:latest
+  ```
+
+  Here, you must remember that, you must have created a Docker Access token from the DOcker hub and then saved it to your Github secrets. FOr more details on this, you can follow step by step guide provided at [my documentation page created for another project](https://github.com/arunp77/Job-Market-project/blob/main/Docker-image-integration.md)
+  
+  Image of the library is available at: [https://hub.docker.com/r/arunp77/mathlib](https://hub.docker.com/r/arunp77/mathlib)
+
+# Package
+
+This is also available as package on npm on following [link](https://www.npmjs.com/package/mathlib-npm-new).
+
+![alt text](image-2.png)
 
 ## Contributing
 
