@@ -203,9 +203,11 @@ pytest algebra.py
 
 # Package
 
-This is also available as package on npm on following [link](https://www.npmjs.com/package/mathlib-npm-new).
+This is also available as package on npm on following [link](https://www.npmjs.com/package/mathlib-npm-new) and on [pypi](https://pypi.org/project/arunp77-mathlib/).
 
 ![alt text](image-2.png)
+
+![alt text](image-3.png)
 
 ## Contributing
 
