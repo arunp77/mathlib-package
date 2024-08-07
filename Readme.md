@@ -72,12 +72,11 @@ __all__ = [
 ]
 ```
 
-#### Crete the python files for various kind of mathematical functions.
+Next Create the python files for various kind of mathematical functions.
 
 ### Step 3: Write Tests
 
-Create some basic tests for your package.
-
+To ensure your package functions as expected, it's essential to write some basic tests. Pytest is a powerful tool for this purpose and is widely recommended for Python projects. It helps you write simple and scalable test cases to validate your code.
 
 
 ### Step 4: Set Up the Package Metadata
