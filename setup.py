@@ -11,7 +11,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Arun Kumar Pandey',
     author_email='arunp77@gmail.com',
-    url='https://github.com/arunp77/Data-engineering-tools/matlib',
+    url='https://github.com/arunp77/mathlib-package/',
     license='MIT',
     install_requires=[],
     classifiers=[
