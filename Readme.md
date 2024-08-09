@@ -1,5 +1,7 @@
 # MathLib: A Simple Python Library for Basic Mathematical Operations
 
+![alt text](image-4.png)
+
 MathLib is a simple Python library for basic mathematical operations, including arithmetic and algebraic functions. It's designed to be easy to use and extendable for more advanced mathematical operations.
 
 ## Features
