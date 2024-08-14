@@ -8,8 +8,5 @@
   },
   "keywords": ["Python", "Mathematical operations"],
   "author": "Arun Kumar Pandey",
-  "license": "ISC",
-  "publishConfig": {
-    "@arunp77:registry": "https://npm.pkg.github.com"
-  }
+  "license": "ISC"
 }
