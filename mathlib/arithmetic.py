@@ -105,3 +105,13 @@ def power(x, y):
     if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
         raise ValueError("Both x and y must be numeric types.")
     return x ** y
+
+
+#----------------- doctest ------------------
+# # mathlib/arithmetic.py
+
+# # ... [existing code] ...
+
+# if __name__ == "__main__":
+#     import doctest
+#     doctest.testmod()
