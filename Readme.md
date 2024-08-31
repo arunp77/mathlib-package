@@ -135,7 +135,7 @@ pytest algebra.py
 Next, we'll create unit tests using Python's built-in `unittest` and `doctest` framework. These tests will cover various scenarios, including edge cases.
 - Please open the `tests/test_arithmetic.py`, see the `unittest` part at the end of the file, commented lines. Similalry, we can modify the test scripts and then run the complete test using:
   ```bash
-  python -m unittest discover -s tests
+  python -m unittest discover -s tests -v
   ```
   It is to be noted that, best practice is to create a `Class` with class name starting with `TestClassname` and define the test methods mame stating with `def test_operation_name():` and adding following lines at the end of the script:
   ```python
@@ -144,7 +144,7 @@ Next, we'll create unit tests using Python's built-in `unittest` and `doctest` f
     # ... [existing code] ...
   
   if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
   ```
 - However, for the `doctest`, check the last lines of `arithmetic.py` (commented lines). Other option is by creating separate file "Doctest Runner" `run_doctests.py` to run all doctests in your package. You can run this script,
 
