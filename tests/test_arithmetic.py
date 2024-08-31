@@ -25,7 +25,7 @@ def test_power():
     with pytest.raises(ValueError):
         power(2, "three")
 
-
+#------------------ unittest-----------------------------------------
 # # tests/test_arithmetic.py
 # import unittest
 # from mathlib import arithmetic
