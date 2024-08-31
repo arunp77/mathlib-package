@@ -113,7 +113,11 @@ setup(
 This `setup.py` file is used to install the package using pip. It includes metadata such as
 
 ## Testing
+There are two kind of tests one can employ. 
+- Firstone is using the `pytest`
+- Second one is using the `unittest` and the `doctest`
 
+#### 1. Using the pytest
 To run the tests for this project, use `pytest`:
 
 ```bash
@@ -126,6 +130,38 @@ To check the individial operations, go to the test folder and run each file with
 ```bash
 pytest algebra.py
 ```
+
+#### 2. Using the unittest and doctest
+Next, we'll create unit tests using Python's built-in `unittest` and `doctest` framework. These tests will cover various scenarios, including edge cases.
+- Please open the `tests/test_arithmetic.py`, see the `unittest` part at the end of the file, commented lines. Similalry, we can modify the test scripts and then run the complete test using:
+  ```bash
+  python -m unittest discover -s tests
+  ```
+  It is to be noted that, best practice is to create a `Class` with class name starting with `TestClassname` and define the test methods mame stating with `def test_operation_name():` and adding following lines at the end of the script:
+  ```python
+  # tests/test_arithmetic.py
+  
+    # ... [existing code] ...
+  
+  if __name__ == '__main__':
+    unittest.main()
+  ```
+- However, for the `doctest`, check the last lines of `arithmetic.py` (commented lines). Other option is by creating separate file "Doctest Runner" `run_doctests.py` to run all doctests in your package. You can run this script,
+
+  ```bash
+  python run_doctests.py
+  ```
+  Here you need to add follwoing to the end of the python script of individual module:
+  ```python
+  # mathlib/arithmetic.py
+
+    # ... [existing code] ...
+    
+    if __name__ == "__main__":
+        import doctest
+        doctest.testmod()
+    ```
+
 ---------
 
 ## Installation
