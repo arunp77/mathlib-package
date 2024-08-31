@@ -61,11 +61,4 @@ def test_power():
 # if __name__ == '__main__':
 #     unittest.main()
 
-#----------------- doctest ------------------
-# # mathlib/arithmetic.py
 
-# # ... [existing code] ...
-
-# if __name__ == "__main__":
-#     import doctest
-#     doctest.testmod()
