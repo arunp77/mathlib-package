@@ -24,3 +24,40 @@ def test_power():
     assert power(5, 0) == 1
     with pytest.raises(ValueError):
         power(2, "three")
+
+
+# # tests/test_arithmetic.py
+# import unittest
+# from mathlib import arithmetic
+
+# class TestArithmetic(unittest.TestCase):
+#     """Unit tests for arithmetic operations."""
+
+#     def test_add(self):
+#         """Test the add function."""
+#         self.assertEqual(arithmetic.add(2, 3), 5)
+#         self.assertEqual(arithmetic.add(-1, 1), 0)
+#         self.assertAlmostEqual(arithmetic.add(2.5, 3.5), 6.0)
+
+#     def test_subtract(self):
+#         """Test the subtract function."""
+#         self.assertEqual(arithmetic.subtract(5, 3), 2)
+#         self.assertEqual(arithmetic.subtract(0, 5), -5)
+#         self.assertAlmostEqual(arithmetic.subtract(2.5, 1.5), 1.0)
+
+#     def test_multiply(self):
+#         """Test the multiply function."""
+#         self.assertEqual(arithmetic.multiply(2, 3), 6)
+#         self.assertEqual(arithmetic.multiply(-1, 5), -5)
+#         self.assertAlmostEqual(arithmetic.multiply(2.5, 4), 10.0)
+
+#     def test_divide(self):
+#         """Test the divide function."""
+#         self.assertAlmostEqual(arithmetic.divide(6, 3), 2.0)
+#         self.assertAlmostEqual(arithmetic.divide(5, 2), 2.5)
+#         with self.assertRaises(ZeroDivisionError):
+#             arithmetic.divide(5, 0)
+
+# if __name__ == '__main__':
+#     unittest.main()
+
