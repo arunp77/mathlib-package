@@ -14,7 +14,7 @@ setup(
     url='https://github.com/arunp77/mathlib-package/',
     license='MIT',
     install_requires=[],
-    # test_suite='tests',  # Specify the test suite
+    # test_suite='tests',  
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
