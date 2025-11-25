@@ -44,124 +44,6 @@ MathLib/
 ├── README.md
 └── LICENSE
 ```
-
-### Step 2: Write the Package Code
-
-#### `mathlib/__init__.py`
-This file makes the `mathlib` directory a package.
-
-```python
-# mathlib/__init__.py
-
-from .arithmetic import add, subtract, multiply, divide, power
-from .algebra import solve_linear, solve_quadratic
-from .trigonometry import sin, cos, tan, arcsin, arccos, arctan
-from .statistics import mean, median, variance, standard_deviation
-from .matrix_operations import matrix_addition, matrix_multiplication, matrix_determinant, matrix_inverse
-from .complex_numbers import complex_addition, complex_subtraction, complex_multiplication, complex_division, complex_magnitude, complex_phase
-from .random_utils import random_integer, random_float
-from .utility import factorial, gcd, lcm
-
-__all__ = [
-    'add', 'subtract', 'multiply', 'divide', 'power',
-    'solve_linear', 'solve_quadratic',
-    'sin', 'cos', 'tan', 'arcsin', 'arccos', 'arctan',
-    'mean', 'median', 'variance', 'standard_deviation',
-    'matrix_addition', 'matrix_multiplication', 'matrix_determinant', 'matrix_inverse',
-    'complex_addition', 'complex_subtraction', 'complex_multiplication', 'complex_division', 'complex_magnitude', 'complex_phase',
-    'random_integer', 'random_float',
-    'factorial', 'gcd', 'lcm'
-]
-```
-
-Next Create the python files for various kind of mathematical functions.
-
-### Step 3: Write Tests
-
-To ensure your package functions as expected, it's essential to write some basic tests. Pytest is a powerful tool for this purpose and is widely recommended for Python projects. It helps you write simple and scalable test cases to validate your code.
-
-
-### Step 4: Set Up the Package Metadata
-
-#### `setup.py`
-
-```python
-# setup.py
-
-from setuptools import setup, find_packages
-
-setup(
-    name='mathlib',
-    version='0.1',
-    packages=find_packages(),
-    description='A simple math library with basic operations',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    author='Arun Kumar Pandey',
-    author_email='arunp77@gmail.com',
-    url='https://github.com/arunp77/mathlib-package.git',
-    license='MIT',
-    install_requires=[],
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
-)
-
-```
-This `setup.py` file is used to install the package using pip. It includes metadata such as
-
-## Testing
-There are two kind of tests one can employ. 
-- Firstone is using the `pytest`
-- Second one is using the `unittest` and the `doctest`
-
-#### 1. Using the pytest
-To run the tests for this project, use `pytest`:
-
-```bash
-pytest tests/
-```
-
-This will run the test suite located in the `tests` directory, ensuring that all functions work as expected.
-
-To check the individial operations, go to the test folder and run each file with `pytest`. FOr example, to check the operations insdie the functions defined in algebra.py, run:
-```bash
-pytest algebra.py
-```
-
-#### 2. Using the unittest and doctest
-Next, we'll create unit tests using Python's built-in `unittest` and `doctest` framework. These tests will cover various scenarios, including edge cases.
-- Please open the `tests/test_arithmetic.py`, see the `unittest` part at the end of the file, commented lines. Similalry, we can modify the test scripts and then run the complete test using:
-  ```bash
-  python -m unittest discover -s tests -v
-  ```
-  It is to be noted that, best practice is to create a `Class` with class name starting with `TestClassname` and define the test methods mame stating with `def test_operation_name():` and adding following lines at the end of the script:
-  ```python
-  # tests/test_arithmetic.py
-  
-    # ... [existing code] ...
-  
-  if __name__ == '__main__':
-    unittest.main(verbosity=2)
-  ```
-- However, for the `doctest`, check the last lines of `arithmetic.py` (commented lines). Other option is by creating separate file "Doctest Runner" `run_doctests.py` to run all doctests in your package. You can run this script,
-
-  ```bash
-  python run_doctests.py
-  ```
-  Here you need to add follwoing to the end of the python script of individual module:
-  ```python
-  # mathlib/arithmetic.py
-
-    # ... [existing code] ...
-    
-    if __name__ == "__main__":
-        import doctest
-        doctest.testmod()
-    ```
-
 ---------
 
 ## Installation
@@ -184,7 +66,7 @@ Next, we'll create unit tests using Python's built-in `unittest` and `doctest` f
 
     ![alt text](image.png)
 
-    We can alsi install it using:
+    We can also install it using:
 
     ```bash
     pip install mathlib
@@ -255,6 +137,3 @@ Contributions are welcome! If you'd like to improve MathLib, please fork the rep
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For questions or suggestions, feel free to reach out at [arunp77@gmail.com](mailto:arunp77@gmail.com).
